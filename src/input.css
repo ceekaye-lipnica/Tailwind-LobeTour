@@ -11,6 +11,9 @@
 }
 
 @layer components{
+
+    /* HEADER */
+
     .header{
         @apply bg-light relative;
     }
@@ -28,11 +31,11 @@
     }
 
     .header__actions{
-        @apply bg-light bg-opacity-90 absolute top-[6rem] left-0 w-full max-h-0 overflow-hidden transition-[.5s] ease-in lg:relative lg:top-0 lg:w-auto lg:overflow-visible;
+        @apply bg-light bg-opacity-90 absolute top-[6rem] left-0 w-full max-h-0 overflow-hidden transition-[.8s] ease-in lg:relative lg:top-0 lg:w-auto lg:overflow-visible;
     }
 
     .header__actions.open{
-        @apply max-h-[50rem] transition-[.5s] ease-in;
+        @apply max-h-[50rem] transition-[.8s] ease-in;
     }
 
     .header__actions ul li{
@@ -100,6 +103,9 @@
             @apply absolute top-[-4.5rem] right-[4rem]
         }
     }
+
+
+     /* ---------LOBE TOUR PAGE----------- */
 
     /* BANNER */
 
@@ -174,7 +180,241 @@
             @apply px-[3rem] py-[1rem] text-[1.5rem];
         }
     }
+
+
+
+    /* ---------LOBE HELP PAGE----------- */
+
+    .help .container{
+        @apply px-[2rem]
+    }
+
+    .help .help-title h2{ 
+        @apply text-dark font-bold text-[2.5rem] text-center;
+
+    }
+
+    .help .help-title .blue-help{ 
+        @apply text-primary;
+    }
+
+    .help .help-title p{ 
+        @apply text-dark text-[1.25rem] text-center;
+    }
+
+    .help .help__wrapper .help-sidebar{
+        @apply hidden;
+    }
+
+    .help .help__wrapper .help-contents{
+        @apply flex flex-col;
+    }
+
+    .help .help-contents .welcome h4{
+        @apply flex justify-between items-center text-[1.2rem] font-medium py-[2.5rem] cursor-pointer;
+    }
+
+    .help .help-contents .welcome h4 i{
+        @apply text-[1.1rem];
+    }
+
+    .help .help-contents .welcome h4 i.open{
+        @apply rotate-[180deg] transition-[.5s] ease-in;
+    }
+
+    .help .help-contents .welcome p{
+        @apply text-[1.1rem] mb-[2rem]
+    }
+
+    .help .help-contents .welcome p a{
+        @apply underline
+    }
+
+    .help .help-contents .welcome ul li{
+        @apply flex items-center gap-[.5rem] mb-[1.5rem] text-[1.1rem];
+    }
+
+    .help .help-contents .welcome ul li a{
+        @apply underline;
+    }
+
+    .help .help__wrapper .help-contents .welcome:not(:first-child){
+        @apply border-solid border-t border-gray-300
+    }
+
+    .help .help-contents .drop{
+        @apply max-h-0 overflow-hidden transition-[.5s] ease-in;
+    }
+
+    .help .help-contents .drop.open{
+        @apply max-h-[50rem] transition-[.5s] ease-in;
+        
+    }
+
+    .help .help-contents .welcome-ask{
+        @apply border-solid border-t border-b border-gray-300
+    }
+
+    .help .help-contents .welcome-ask .ask-text{
+        @apply gap-[.8rem] py-[2rem] cursor-pointer;
+    }
+
+    .help .help-contents .welcome-ask .ask-text i{
+        @apply text-orange-600 text-[1.5rem];
+    }
+
+    .help .help-contents .welcome-ask .ask-text h4{
+        @apply  flex items-center justify-between text-[1.1rem] font-medium;
+    }
+
+    .help .help-contents .welcome-ask .ask-text h4 i{
+        @apply text-dark text-[1.1rem];
+    }
+
+    @media (min-width: 1024px){
+        .help .help-title h2{ 
+            @apply text-[5rem];
     
+        }
+
+        .help .help-title p{ 
+            @apply text-[1.5rem];
+        }
+
+        .help .help-title p span{ 
+            @apply block ;
+        }
+
+        .help .help__wrapper{
+            @apply flex justify-center gap-[5rem];
+        }
+    
+        .help .help__wrapper .help-sidebar{
+            @apply block mt-[2.5rem] max-w-[15rem];
+        }
+
+        .help .help__wrapper .help-contents{
+            @apply max-w-[32%];
+        }
+
+        .help .help-sidebar .help-tab ul li{
+            @apply p-[1rem];
+        }
+
+        .help .help-sidebar .help-tab li.active{
+            @apply bg-primary rounded-xl;
+        }
+
+        
+
+
+    
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* TRAIN */
+
+    .train .train__wrapper .train-text{
+        @apply mt-[6rem];
+    }
+
+    .train .train__wrapper .train-text h2{
+        @apply text-[2.5rem] font-bold text-center mb-[2rem] leading-[1.2] text-dark;
+    }
+
+    .train .train__wrapper .train-text h2 span{
+        @apply block;
+    }
+
+    .train .train__wrapper .train-text .train-btn{
+        @apply flex justify-center;
+    }
+
+    .train .train__wrapper .train-text .train-btn a{
+        @apply px-[2rem] text-[1.15rem];
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /* FOOTER */
@@ -232,13 +472,17 @@
     }
 
     .footer .footer-branding .copyright p:nth-child(2) {
-        @apply m-[1rem];
+        @apply my-[1rem];
     }
 
     @media (min-width: 1024px){
 
         .footer{
             @apply max-w-[1317px] mx-auto;
+        }
+
+        .footer .footer-branding .branding-img{
+            @apply block;
         }
 
         .footer .footer-items h4 i{
@@ -271,6 +515,11 @@
 
         .footer .footer-branding{
             @apply mt-0;
+        }
+
+        .footer .footer-branding .copyright{
+            @apply text-left;
+            
         }
 
     }

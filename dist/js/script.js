@@ -14,3 +14,11 @@ links.forEach((baba) => {
 		baba.querySelector("i").classList.toggle("open");
 	});
 });
+
+const help = document.querySelectorAll(".welcome h4");
+help.forEach((helpLink) => {
+	helpLink.addEventListener("click", () => {
+		helpLink.nextElementSibling.classList.toggle("open");
+		helpLink.querySelector("i").classList.toggle("open");
+	});
+});

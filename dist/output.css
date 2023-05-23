@@ -556,6 +556,8 @@ video {
   }
 }
 
+/* HEADER */
+
 .header {
   position: relative;
   --tw-bg-opacity: 1;
@@ -588,7 +590,7 @@ video {
   overflow: hidden;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.9;
-  transition-property: .5s;
+  transition-property: .8s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
@@ -605,7 +607,7 @@ video {
 
 .header__actions.open {
   max-height: 50rem;
-  transition-property: .5s;
+  transition-property: .8s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
@@ -746,6 +748,8 @@ video {
   }
 }
 
+/* ---------LOBE TOUR PAGE----------- */
+
 /* BANNER */
 
 .banner {
@@ -854,6 +858,217 @@ video {
     padding-bottom: 1rem;
     font-size: 1.5rem;
   }
+}
+
+/* ---------LOBE HELP PAGE----------- */
+
+.help .container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.help .help-title h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.help .help-title .blue-help {
+  --tw-text-opacity: 1;
+  color: rgb(4 221 178 / var(--tw-text-opacity));
+}
+
+.help .help-title p {
+  text-align: center;
+  font-size: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.help .help__wrapper .help-sidebar {
+  display: none;
+}
+
+.help .help__wrapper .help-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.help .help-contents .welcome h4 {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.help .help-contents .welcome h4 i {
+  font-size: 1.1rem;
+}
+
+.help .help-contents .welcome h4 i.open {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: .5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.help .help-contents .welcome p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.help .help-contents .welcome p a {
+  text-decoration-line: underline;
+}
+
+.help .help-contents .welcome ul li {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1.1rem;
+}
+
+.help .help-contents .welcome ul li a {
+  text-decoration-line: underline;
+}
+
+.help .help__wrapper .help-contents .welcome:not(:first-child) {
+  border-top-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.help .help-contents .drop {
+  max-height: 0px;
+  overflow: hidden;
+  transition-property: .5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.help .help-contents .drop.open {
+  max-height: 50rem;
+  transition-property: .5s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.help .help-contents .welcome-ask {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.help .help-contents .welcome-ask .ask-text {
+  cursor: pointer;
+  gap: .8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.help .help-contents .welcome-ask .ask-text i {
+  font-size: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
+.help .help-contents .welcome-ask .ask-text h4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.help .help-contents .welcome-ask .ask-text h4 i {
+  font-size: 1.1rem;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .help .help-title h2 {
+    font-size: 5rem;
+  }
+
+  .help .help-title p {
+    font-size: 1.5rem;
+  }
+
+  .help .help-title p span {
+    display: block;
+  }
+
+  .help .help__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .help .help__wrapper .help-sidebar {
+    margin-top: 2.5rem;
+    display: block;
+    max-width: 15rem;
+  }
+
+  .help .help__wrapper .help-contents {
+    max-width: 32%;
+  }
+
+  .help .help-sidebar .help-tab ul li {
+    padding: 1rem;
+  }
+
+  .help .help-sidebar .help-tab li.active {
+    border-radius: 0.75rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(4 221 178 / var(--tw-bg-opacity));
+  }
+}
+
+/* TRAIN */
+
+.train .train__wrapper .train-text {
+  margin-top: 6rem;
+}
+
+.train .train__wrapper .train-text h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.train .train__wrapper .train-text h2 span {
+  display: block;
+}
+
+.train .train__wrapper .train-text .train-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.train .train__wrapper .train-text .train-btn a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.15rem;
 }
 
 /* FOOTER */
@@ -975,7 +1190,8 @@ video {
 }
 
 .footer .footer-branding .copyright p:nth-child(2) {
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 1024px){
@@ -983,6 +1199,10 @@ video {
     margin-left: auto;
     margin-right: auto;
     max-width: 1317px;
+  }
+
+  .footer .footer-branding .branding-img {
+    display: block;
   }
 
   .footer .footer-items h4 i {
@@ -1021,10 +1241,22 @@ video {
   .footer .footer-branding {
     margin-top: 0px;
   }
+
+  .footer .footer-branding .copyright {
+    text-align: left;
+  }
+}
+
+.visible {
+  visibility: visible;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize {
+  resize: both;
 }
 
 .font-sans {
