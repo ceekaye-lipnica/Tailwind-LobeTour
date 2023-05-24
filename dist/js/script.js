@@ -22,3 +22,30 @@ help.forEach((helpLink) => {
 		helpLink.querySelector("i").classList.toggle("open");
 	});
 });
+
+
+/* HELP TAB */
+const helpNav = document.querySelectorAll(".help-tab__link");
+const helpContent = document.querySelectorAll(".help-tab-contents");
+
+helpNav.forEach((help) => {
+	help.addEventListener("click", () => {
+		removeActiveStar();
+		help.classList.add("active");
+		const activeContent = document.querySelector(`#${help.id}-contents`);
+		removeActiveContent();
+		activeContent.classList.add("active");
+	});
+});
+
+function removeActiveStar() {
+	helpNav.forEach((help) => {
+		help.classList.remove("active");
+	});
+}
+
+function removeActiveContent() {
+	helpContent.forEach((help) => {
+		help.classList.remove("active");
+	});
+}
