@@ -406,11 +406,114 @@
             @apply text-[1.5rem] font-[400] text-dark;
         }
 
-        .example .card-items .card-text {
+        .example .card-items .card-text{
             @apply px-[1.5rem] pt-[1.55rem] pb-[2rem];
         }
 
     }
+
+
+	/* ---------LOBE BLOG PAGE----------- */
+
+	.blog .blog-title{
+		@apply mb-[3.5rem];
+	}
+
+
+	.blog .blog-title h2{
+		@apply text-dark font-bold text-[2.5rem] text-center;
+	}
+
+	.blog .blog-title .title{
+		@apply text-primary;
+	}
+
+	.blog .blog-title p{
+		@apply text-dark text-center text-[1.1rem] font-[400] leading-[1.5];
+	}
+
+	.blog .blog-title p span{
+		@apply block;
+	}
+
+	.blog .box-items{
+        @apply bg-light rounded-[1.5rem] shadow-2xl mb-[2.5rem] hover:scale-[1.02] transition-[.5s] ease-in;
+    }
+
+	
+    .blog .box-items img{
+        @apply rounded-t-[1.5rem];
+    }
+
+	.blog .box-items .box-text {
+        @apply px-[1.3rem] pt-[1.2rem] pb-[1.5rem];
+    }
+
+	.blog .box-items .box-text h3{
+        @apply font-bold text-[1.2rem];
+    }
+
+    .blog .box-items .box-text p{
+        @apply text-[1.1rem] font-[400] text-dark mt-[1rem];
+    }
+
+    .blog .box-items .box-text h4{
+        @apply text-[1rem] font-[500] text-gray-500 mt-[2rem];
+    }
+
+	@media (min-width: 1024px) {
+
+		.blog .blog-title h2{
+            @apply text-[5.2rem];
+        }
+
+        .blog .blog-title p{
+            @apply text-[2rem];
+        }
+
+        .blog .blog__wrapper{
+            @apply grid grid-cols-[_1fr,_2fr] gap-x-[4rem] gap-y-[2rem];
+        }
+
+		.blog .box-bottom{
+			@apply flex justify-center mt-[2rem];
+		}
+
+        .blog .container{
+            @apply max-w-[80rem] mx-auto;
+        }
+
+        .blog .box-items{
+            @apply w-[37rem];
+        }
+
+        .blog .box-items img{
+            @apply w-full;
+        }
+
+        .blog .box-items .box-text h3{
+            @apply font-medium text-[1.5rem];
+        }
+    
+        .blog .box-items .box-text p{
+            @apply text-[1.5rem] font-[400] text-dark;
+        }
+
+        .blog .box-items .box-text{
+            @apply px-[1.5rem] pt-[1.55rem] pb-[2rem];
+        }
+
+		.blog .box-items .box-text h4{
+        @apply text-[1.2rem];
+    }
+
+
+	
+	
+	
+	
+	}
+
 
 
 
