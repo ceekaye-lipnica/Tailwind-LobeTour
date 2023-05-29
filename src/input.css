@@ -93,7 +93,7 @@
 			@apply flex gap-[3rem];
 		}
 
-		.header__nav ul li a {
+		.header__nav ul li {
 			@apply text-grey text-[1.2rem] font-medium hover:scale-[1.01] transition-all;
 		}
 
@@ -471,8 +471,8 @@
             @apply text-[2rem];
         }
 
-        .blog .blog__wrapper{
-            @apply grid grid-cols-[_1fr,_2fr] gap-x-[4rem] gap-y-[2rem];
+		.blog .blog__wrapper{
+            @apply lg:flex lg:flex-wrap lg:max-w-[140rem] lg:gap-x-[3rem] justify-center;
         }
 
 		.blog .box-bottom{
@@ -506,11 +506,6 @@
 		.blog .box-items .box-text h4{
         @apply text-[1.2rem];
     }
-
-
-	
-	
-	
 	
 	}
 
